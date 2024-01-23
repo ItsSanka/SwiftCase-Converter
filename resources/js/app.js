@@ -13,3 +13,10 @@ document.getElementById("lowCase").onclick = function(){
 
     document.getElementById("label").value = a;
 }
+
+document.getElementById("clear").onclick = function(){
+    a = document.getElementById("label").value;
+    a = a.value =""
+
+    document.getElementById("label").value = a;
+}
