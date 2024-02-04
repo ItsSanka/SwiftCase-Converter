@@ -16,7 +16,7 @@ document.getElementById("lowCase").onclick = function () {
 
 document.getElementById("CapitalCase").onclick = function () {
     a = document.getElementById("label").value;
-    a = a.charAt(0).toUpperCase() + a.slice(1, a.indexOf(" "));
+    a = a.replace(/\b\w/g, function (b) { return b.toUpperCase() })
 
     document.getElementById("label").value = a;
 }
